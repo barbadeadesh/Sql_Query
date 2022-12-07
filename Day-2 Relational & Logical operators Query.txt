@@ -1,0 +1,28 @@
+Relational operators:
+
+Que: write a query to display all the emp details who is earning salary more than 2k
+Ans: select * from employeedetails where esal>2000;
+
+Que: write a query to display all the emp details who is earning salary less than 1500
+Ans: select * from employeedetails where esal<1500;
+
+Que: write a query to display all the emp details apart from developer
+Ans: select * from employeedetails where edept != 'developer';
+
+Que: write a query to display name in ass order from emp table
+Ans: select * from employeedetails order by ename asc;
+
+
+Logical operators:
+
+Que: write a query to display all the emp details of teacher who belongs to 20th dept
+Ans: select * from employeedetails where edept='teacher' and deptno=20
+
+Que: write a query to display all the emp details of teacher who earns salary more 1K
+Ans: select * from employeedetails where edept='teacher' and esal>1000
+
+Que: write a query to display all the emp details who belongs to 10 and 30 dept 
+Ans: select * from employeedetails where deptno=10 or deptno=30
+
+Que:write a query to display all the emp details for databse  and teacher
+Ans:select * from employeedetails where edept='databse' or edept='teacher'
