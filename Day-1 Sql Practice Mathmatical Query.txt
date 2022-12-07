@@ -1,0 +1,26 @@
+Q--   Create a table of employee details with enmae,eid,ejob,edept,esal
+
+Ans:  Create table employeedetails (eid int primary key not null, ename varchar(45) not null, ejob varchar(45) not null, 
+      edept varchar(45) not null, esal int not null);
+ 
+      insert into employeedetails values(1,'adesh','medical','billing',1000),(2,'rahul','college','teacher'
+      ,2000),(3,'yogesh','it','databse',3000),(4,'rohit','sport','analyst',4000),(5,'vikki','it','developer',5000);
+ 
+ 
+Q1-   Write a query to display ename and increase salary by 1000
+Ans:  select ename,esal+1000 from employeedetails;
+
+Q2-   Write a query to display ename and decrease salary by 500 
+Ans:  select ename,esal-500 from employeedetails;
+ 
+Q3-   Write a query to display ename, daily esal of employee
+Ans:  select ename,esal/30 from employeedetails;
+ 
+Q4-   Write a query to display ename and salary modulus by 2
+Ans:  select ename,mod(esal,2) from employeedetails;
+
+Q5-   Write a query to display ename, Annual esal of employee
+Ans:  select ename,esal*30 from employeedetails;
+ 
+ 
+ 
